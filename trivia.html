@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Samuel</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+  <div>
+    <img src="images/webdev.jfif" alt="image for web dev" style="width:100%;">
+</div>
+  <section>
+  <nav>
+    <p>Projects Done</p>
+    <ul>
+      <li><a href="trivia.html">Trivia/Quiz Game Using JS (and jQuery)</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Trivia/Quiz Game Using JS</h1>
+    <p>Developing the sample projects has helped to build a robust understanding of DOM manipulation, one of the key aspects of JavaScript programming and data management. 
+    <br><br>
+    I started with sample practise samples and developed from there on. 
+    <br><br>
+    Click on each project to see what each project was about. 
+    <br><br>
+    <a href="index.html">Back</a>
+ </article>
+
+</section>
+
+<footer>
+  <p>Developed by Samuel</p>
+</footer>
+
+</body>
+</html>
+
